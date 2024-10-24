@@ -178,7 +178,8 @@
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
         active = true; startTime = new Date(); 
-        
+        var message = "タイマーがスタートしました！";
+    $("#statusMessage").html(message);
     }
 
     // ButtonBがクリックされた時の処理
@@ -221,5 +222,6 @@
     <button id="btnC">Set</button>  
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
+    <div id="statusMessage">ここにメッセージが表示されます</div>
 </body>
 </html>
